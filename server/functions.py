@@ -23,8 +23,5 @@ def get_random_video(num):
 	pingless_yt_links = [f"https://www.youtube.com/watch?v={a.replace('/url?q=https://www.youtube.com/watch%3Fv%3D', '').split('&sa')[0]}" for a in yt_links]
 	return random.choices(pingless_yt_links, k=num)
 
-def get_random_quote(num):
-	pass
-
 def get_random(num):
-	return random.choice([get_random_img(), get_random_video(), get_random_quote()])
+	return random.choices(get_random_img(num) + get_random_video(num), k=num)
