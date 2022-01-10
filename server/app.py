@@ -1,7 +1,9 @@
-from flask import Flask
+from flask import Flask, jsonify
 from functions import *
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/')
 def home():
@@ -9,15 +11,15 @@ def home():
 
 @app.route('/get_random_video/<num>')
 def rand_video(num):
-	return str(get_random_video(int(num)))
+	return jsonify(get_random_video(int(num)))
 
 @app.route('/get_random_img/<num>')
 def rand_img(num):
-	return str(get_random_img(int(num)))
+	return jsonify(get_random_img(int(num)))
 
 @app.route('/get_random/<num>')
 def rand(num):
-	return str(get_random(int(num)))
+	return jsonify(get_random(int(num)))
 
 if __name__ == '__main__':
 	app.run(debug=True)
