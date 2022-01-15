@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template
 from functions import *
 from flask_cors import CORS
 
@@ -7,7 +7,7 @@ CORS(app)
 
 @app.route('/')
 def home():
-	return '<h1>Hello World!</h1>'
+	return render_template('index.html')
 
 @app.route('/get_random_video/<num>')
 def rand_video(num):

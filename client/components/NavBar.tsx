@@ -12,7 +12,7 @@ const NavBar = () => {
 					<Link href="/about">About</Link>
 				</li>
 				<li className='m-3 hover:cursor-pointer hover:text-orange-300'>
-					API	
+					<a href="http://127.0.0.1:5000/" target="_blank">API</a>
 				</li>
 				<li className='m-3 hover:cursor-pointer hover:text-orange-300'>
 					<a href="https://github.com/Zeno3463/i-can-do-it" target="_blank">Repo</a>

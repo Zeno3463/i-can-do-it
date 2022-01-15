@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			font-size: 4vw;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		@media screen and (max-width: 600px) {
+			* {
+				font-size: 20px;
+			}
+		}
+		body {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			height: 100vh;
+			justify-content: center;
+		}
+		h1 {
+			font-size: 1rem;
+			margin: 0.3em;
+		}
+		p {
+			font-size: 0.6rem;
+		}
+		tr, td {
+			border: 1px solid black;
+			padding: 0.5rem;
+		}
+		td {
+			font-size: 0.5rem;
+		}
+	</style>
+</head>
+<body>
+	<h1>Welcome to "I Can Do It" API!</h1>
+	<div>
+		<p>url endpoints:</p>
+		<table>
+			<tr>
+				<td>/get_random_img/{n: integer}</td>
+				<td>GET</td>
+				<td>Get n random urls of motivational images</td>
+			</tr>
+			<tr>
+				<td>/get_random_video/{n: integer}</td>
+				<td>GET</td>
+				<td>Get n random urls of motivational videos</td>
+			</tr>
+			<tr>
+				<td>/get_random/{n: integer}</td>
+				<td>GET</td>
+				<td>Get n random urls of motivational images and videos</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
