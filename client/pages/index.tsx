@@ -41,7 +41,7 @@ const Home: NextPage = ({ data }: InferGetStaticPropsType<typeof getStaticProps>
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-	const res = await fetch("http://127.0.0.1:5000/get_random/50");
+	const res = await fetch("https://i-can-do-it-server.zeno3463.repl.co/get_random/50");
 	const data = await res.json();
 
 	if (!data) return { notFound: true };

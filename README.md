@@ -16,3 +16,6 @@ Here's a [link]() for the application.
 ### Screenshots (API)
 ![img](https://i.imgur.com/NlHGzvy.png)
 ![img](https://i.imgur.com/bwFHI1U.png)
+
+### To Do
+- [] Bigger Images
