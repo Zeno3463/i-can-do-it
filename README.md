@@ -6,7 +6,7 @@ A website/API that collects inspirational quotes, images, and videos from source
 
 ### Link
 ---
-Here's a [link]() for the application.
+Here's a [link](https://i-can-do-it.vercel.app/) for the application.
 
 ### Screenshots (Website)
 ---
