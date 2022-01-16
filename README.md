@@ -14,8 +14,10 @@ Here's a [link](https://i-can-do-it.vercel.app/) for the application.
 ![img](https://i.imgur.com/oT5lvJI.png)
 
 ### Screenshots (API)
+---
 ![img](https://i.imgur.com/NlHGzvy.png)
 ![img](https://i.imgur.com/bwFHI1U.png)
 
 ### To Do
+---
 - [ ] Bigger Images
