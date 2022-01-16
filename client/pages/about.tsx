@@ -7,7 +7,7 @@ const About = () => {
 			<h3 className='font-medium opacity-75'>"I Can Do It" is a website/API that collects inspirational quotes, images, and videos from sources like Google, Youtube, etc.</h3>
 			<ul className='font-medium opacity-75 mt-20'>
 				<li>Created By: Zeno</li>
-				<li>Created At: XXX</li>
+				<li>Created At: 16/1/2022</li>
 			</ul>
 		</div>
 	)
