@@ -19,7 +19,9 @@ def get_random_video(num):
 	]
 	website = requests.get(random.choice(sources))
 	soup = BeautifulSoup(website.content, 'html.parser')
+	# get all video links that is from youtube
 	yt_links = [a.get('href') for a in soup.find_all('a', href=True) if 'youtube' in a.get('href')]
+	# replace the youtube ping link with the actual video link
 	pingless_yt_links = [f"https://www.youtube.com/watch?v={a.replace('/url?q=https://www.youtube.com/watch%3Fv%3D', '').split('&sa')[0]}" for a in yt_links]
 	return random.choices(pingless_yt_links, k=num)
 
