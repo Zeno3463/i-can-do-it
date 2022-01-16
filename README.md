@@ -18,4 +18,4 @@ Here's a [link](https://i-can-do-it.vercel.app/) for the application.
 ![img](https://i.imgur.com/bwFHI1U.png)
 
 ### To Do
-- [] Bigger Images
+- [ ] Bigger Images
